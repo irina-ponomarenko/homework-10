@@ -1,0 +1,29 @@
+html, body{
+  font-size: $size-all;
+  font-family: $family-all;
+  line-height: 21px;
+  color: $color-white;
+}
+h1{
+  color: $color-white;
+  font-size: $size-h1;
+  font-family: $famili-open-sans;
+  font-weight: bold;
+  line-height: 71px;
+}
+h2{
+  font-size: $size-h2;
+  font-family: $family-all;
+  line-height: 33px;
+}
+.team-h2{
+  color: $color-black;
+  margin-top: 25px;
+}
+.team-span{
+  color: $color-red;
+}
+.team-p{
+  color: $color-black;
+  margin-top: 25px;
+}

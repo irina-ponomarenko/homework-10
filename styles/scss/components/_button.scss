@@ -1,0 +1,15 @@
+button{
+  border: none;
+  font-family: $family-all;
+  text-transform: uppercase;
+  font-size: $size-small;
+}
+#button-red{
+    background-color: $color-red-orange;
+    padding: 20px 56px;
+}
+#btn-download{
+  background-color: $color-red-orange;
+  padding: 20px 82px;
+  color:$color-white;
+}

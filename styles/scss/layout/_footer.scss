@@ -1,0 +1,38 @@
+.top-footer{
+  padding: 72px 0 85px 0;
+  background-color: $color-darck-blue;
+}
+.footer-col{
+  text-align: center;
+  h3{
+    font-weight: bold;
+  }
+  p{
+    color: $color-grey;
+    margin-top: 26px;
+  }
+  ul{
+   display: flex;
+    justify-content: center;
+    .border-white{
+      border: 2px solid $color-white;
+      a{
+        color: $color-white;
+      }
+    }
+  }
+}
+.footer-bottom{
+  padding: 30px 0 30px 0;
+  text-align: center;
+  background-color: $color-blue-black;
+  p{
+    color: $color-grey;
+  }
+  span{
+    color: $color-white;
+  }
+  i{
+    color: $color-red;
+  }
+}
