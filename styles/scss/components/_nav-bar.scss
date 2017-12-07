@@ -1,10 +1,13 @@
 .bg-light{
   background-color: transparent !important;
 }
+.navbar{
+  margin-bottom: 0;
+}
 .navbar-light {
   .navbar-nav {
-    .nav-link {
-      color: $color-grey !important;
+    .nav-a {
+      color: $color-grey;
       font-family: $family-all;
       font-size: $size-small;
       margin-right: 70px;
@@ -13,5 +16,18 @@
         margin-right: 0;
       }
     }
+  }
+}
+.navbar-nav{
+  a{
+    &:hover{
+      color: $color-white !important;
+      text-decoration: none;
+    }
+  }
+}
+.navbar-nav{
+  .active{
+    color: $color-white !important;
   }
 }

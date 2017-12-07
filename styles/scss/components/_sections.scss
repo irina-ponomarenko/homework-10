@@ -12,13 +12,16 @@ section{
   background-size: cover;
   height: 100vh;
   min-height: 750px;
+  position: relative;
 }
 .wellcome-info{
-  max-height: 750px;
   text-align: center;
-  vertical-align: middle;
-  padding: 1rem;
-  margin-top: 10%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin-top: 50px;
+
 }
 .features{
   padding: 40px 0 120px 0;
@@ -154,6 +157,7 @@ section{
   }
 }
 .carousel-indicators{
+  width: 50%;
   left: 75%;
   li{
     width: 12px;
@@ -189,3 +193,4 @@ section{
 .card{
   border: none;
 }
+

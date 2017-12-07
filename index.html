@@ -14,11 +14,12 @@
     <link href="styles/css/jBox.css" rel="stylesheet">
     <link href="styles/css/style.css" rel="stylesheet"/>
     <link href="styles/css/media.css" rel="stylesheet"/>
+    <link  media="all" href="styles/css/jquery.lightbox-0.5.css" rel="stylesheet">
 </head>
 <body>
 <section class="wellcome">
-    <div class="container">
         <header class="header">
+            <div class="container-header">
             <div class="logo">
                 <img src="images/logo.png" alt="logo"/>
             </div>
@@ -28,15 +29,17 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                     <div class="navbar-nav">
-                        <a class="nav-item nav-link active" href="#">Features<span class="sr-only">(current)</span></a>
-                        <a class="nav-item nav-link" href="#">Works</a>
-                        <a class="nav-item nav-link" href="#">Our Team</a>
-                        <a class="nav-item nav-link" href="#">Testimonials</a>
-                        <a class="nav-item nav-link" href="#">Download</a>
+                        <a class="nav-a active" href="#features">Features<span class="sr-only">(current)</span></a>
+                        <a class="nav-a" href="#works">Works</a>
+                        <a class="nav-a" href="#team">Our Team</a>
+                        <a class="nav-a" href="#clients">Testimonials</a>
+                        <a class="nav-a" href="#download">Download</a>
                     </div>
                 </div>
             </nav>
+            </div>
         </header>
+    <div class="container">
         <div class="wellcome-info">
             <h1 class="margin-bottom-h1">Your Favorite One Page
                 Multi Purpose Template</h1>
@@ -46,7 +49,7 @@
         </div>
     </div>
 </section>
-<section class="features">
+<section class="features" id="features">
     <div class="container">
         <div class="row">
             <div class="col-sm pen margin-top-row">
@@ -90,26 +93,83 @@
         </div>
     </div>
 </section>
-<section class="ligtbox">
+<section class="ligtbox" id="works">
     <div class="container-galery content">
-        <img src="images/1.jpg" alt="" class="jbox-img">
-        <img src="images/2.jpg" alt="" class="jbox-img">
-        <img src="images/3.jpg" alt="" class="jbox-img">
-        <img src="images/4.jpg" alt="" class="jbox-img">
-        <img src="images/5.jpg" alt="" class="jbox-img">
-        <img src="images/6.jpg" alt="" class="jbox-img">
-        <img src="images/7.jpg" alt="" class="jbox-img">
-        <img src="images/8.jpg" alt="" class="jbox-img">
-    </div>
-    <div class="jbox-container">
-        <div class="img-alt-text"></div>
-        <img src="" />
-        <i id="prev" class="fa fa-angle-left"></i>
-        <i id="next" class="fa fa-angle-right"></i>
-        <i id="close" class="fa fa-times"></i>
+        <div class="wrapper-galery" id="thumbnails">
+            <div class="hover-galery">
+                <h3>Project Name</h3>
+                <p>User Interface Design</p>
+            </div>
+            <a href="images/1.jpg" title="">
+                <img title="" src="images/1.jpg" alt="" class="jbox-img">
+            </a>
+        </div>
+        <div class="wrapper-galery">
+            <div class="hover-galery">
+                <h3>Project Name</h3>
+                <p>User Interface Design</p>
+            </div>
+            <a href="images/2.jpg" title="">
+            <img src="images/2.jpg" alt="" class="jbox-img">
+            </a>
+        </div>
+        <div class="wrapper-galery">
+            <div class="hover-galery">
+                <h3>Project Name</h3>
+                <p>User Interface Design</p>
+            </div>
+            <a href="images/3.jpg" title="">
+            <img src="images/3.jpg" alt="" class="jbox-img">
+            </a>
+        </div>
+        <div class="wrapper-galery">
+            <div class="hover-galery">
+                <h3>Project Name</h3>
+                <p>User Interface Design</p>
+            </div>
+            <a href="images/4.jpg" title="">
+            <img src="images/4.jpg" alt="" class="jbox-img">
+            </a>
+        </div>
+        <div class="wrapper-galery">
+            <div class="hover-galery">
+                <h3>Project Name</h3>
+                <p>User Interface Design</p>
+            </div>
+            <a href="images/5.jpg" title="Turntable by Jens Kappelmann">
+            <img src="images/5.jpg" alt="" class="jbox-img">
+            </a>
+        </div>
+        <div class="wrapper-galery">
+            <div class="hover-galery">
+                <h3>Project Name</h3>
+                <p>User Interface Design</p>
+            </div>
+            <a href="images/6.jpg" title="">
+            <img src="images/6.jpg" alt="" class="jbox-img">
+            </a>
+        </div>
+        <div class="wrapper-galery">
+            <div class="hover-galery">
+                <h3>Project Name</h3>
+                <p>User Interface Design</p>
+            </div>
+            <a href="images/7.jpg" title="">
+            <img src="images/7.jpg" alt="" class="jbox-img">
+            </a>
+        </div>
+        <div class="wrapper-galery">
+            <div class="hover-galery">
+                <h3>Project Name</h3>
+                <p>User Interface Design</p>
+            </div>
+            <a href="images/8.jpg" title="">
+            <img src="images/8.jpg" alt="" class="jbox-img">
+            </a>
+        </div>
     </div>
 </section>
-<section class="team">
+<section class="team" id="team">
     <div class="container">
         <ul class="row">
             <li class="col first-child-list">
@@ -235,7 +295,7 @@
         </ul>
     </div>
 </section>
-<section class="clients">
+<section class="clients" id="clients">
     <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
         <ol class="carousel-indicators">
             <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
@@ -271,20 +331,14 @@
                 </div>
             </div>
         </div>
-        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-            <span class="sr-only">Previous</span>
-        </a>
-        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-            <span class="sr-only">Next</span>
-        </a>
     </div>
 </section>
-<section class="dw-load">
+<section class="dw-load" id="download">
     <div class="card text-center">
         <div class="card-body">
             <h3 class="card-title">Are You Ready to Start? Download Now For Free!</h3>
             <p class="card-text">Fusce dapibus, tellus ac cursus commodo</p>
-            <button type="submit" id="btn-download">Download Here</button>
+            <button type="submit" id="btn-download" class="hvr-buzz">Download Here</button>
         </div>
     </div>
 </section>
@@ -338,8 +392,12 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
-<script src="js/jquery.touchSwipe.min.js"></script>
-<script src="js/jBox-min.js"></script>
 <script src="js/js.js"></script>
+<script src="js/jquery.lightbox-0.5.min.js"></script>
+<script type="text/javascript">
+    $(function() {
+            $('#thumbnails a').lightBox();
+    });
+</script>
 </body>
 </html>

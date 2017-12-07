@@ -1,11 +1,25 @@
 .header{
+  position: fixed;
+  z-index: 1000;
+  width: 100%;
+}
+.container-header{
+  max-width: 1170px;
+  width: 100%;
+  margin: 0 auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
- padding: 3.3rem 0 3.3rem 0;
+  padding: 1.5rem 0 1.5rem 0;
   border-bottom: 1px solid $colors-grey-blue;
 }
 .logo{
   margin-left: 1rem;
+}
+.fixed{
+  background-color: $color-blue-black;
+  .container-header{
+    border: none;
+  }
 }
 

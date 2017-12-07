@@ -1,24 +1,34 @@
-.content img{
-  width:25%;
-  margin:0;
-  padding:0;
-  float:left;
+.content{
+  display: flex;
+  flex-wrap: wrap;
 }
-.hover{
+.wrapper-galery img{
+  width:100%;
+  display: block;
+}
+.wrapper-galery{
+  width: 25%;
+  position: relative;
+  overflow: hidden;
+}
+.hover-galery{
+  display: none;
   position: absolute;
-  width:25%;
-  margin:0;
-  padding:0;
-  float:left;
+  width: 100%;
+  height: 100%;
   background-color: rgba(255, 80, 80, 0.8);
-  padding: 7.2% 0 7.2% 0;
+  text-align: center;
 }
-.hover h2{
-  font-size: 150%;
+
+.hover-galery h3{
+  margin-top: 30%;
   font-weight: bold;
 }
-.hover p{
-  font-size: 150%;
+.hover-galery p{
+  margin-bottom: 10.7em;
+}
+.wrapper-galery:hover .hover-galery{
+  display: block;
 }
 @keyframes popUp {
   from {

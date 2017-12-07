@@ -55,15 +55,31 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 }
 
 .header {
+  position: fixed;
+  z-index: 1000;
+  width: 100%;
+}
+
+.container-header {
+  max-width: 1170px;
+  width: 100%;
+  margin: 0 auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 3.3rem 0 3.3rem 0;
+  padding: 1.5rem 0 1.5rem 0;
   border-bottom: 1px solid #505268;
 }
 
 .logo {
   margin-left: 1rem;
+}
+
+.fixed {
+  background-color: #313454;
+}
+.fixed .container-header {
+  border: none;
 }
 
 .top-footer {
@@ -149,15 +165,28 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   background-color: transparent !important;
 }
 
-.navbar-light .navbar-nav .nav-link {
-  color: #cbccd2 !important;
+.navbar {
+  margin-bottom: 0;
+}
+
+.navbar-light .navbar-nav .nav-a {
+  color: #cbccd2;
   font-family: "Raleway", sans-serif;
   font-size: 13px;
   margin-right: 70px;
   padding: 0;
 }
-.navbar-light .navbar-nav .nav-link:last-child {
+.navbar-light .navbar-nav .nav-a:last-child {
   margin-right: 0;
+}
+
+.navbar-nav a:hover {
+  color: white !important;
+  text-decoration: none;
+}
+
+.navbar-nav .active {
+  color: white !important;
 }
 
 html, body {
@@ -205,12 +234,63 @@ button {
 #button-red {
   background-color: #e84545;
   padding: 20px 56px;
+  outline: none;
+  -webkit-box-shadow: -2px -2px 9px 0px rgba(0, 0, 0, 0.43);
+  -moz-box-shadow: -2px -2px 9px 0px rgba(0, 0, 0, 0.43);
+  box-shadow: -2px -2px 9px 0px rgba(0, 0, 0, 0.43);
 }
 
 #btn-download {
   background-color: #e84545;
   padding: 20px 82px;
   color: white;
+  outline: none;
+  -webkit-box-shadow: -2px -2px 9px 0px rgba(0, 0, 0, 0.43);
+  -moz-box-shadow: -2px -2px 9px 0px rgba(0, 0, 0, 0.43);
+  box-shadow: -2px -2px 9px 0px rgba(0, 0, 0, 0.43);
+}
+
+@-webkit-keyframes hvr-buzz {
+  50% {
+    -webkit-transform: translateX(3px) rotate(2deg);
+    transform: translateX(3px) rotate(2deg);
+  }
+  100% {
+    -webkit-transform: translateX(-3px) rotate(-2deg);
+    transform: translateX(-3px) rotate(-2deg);
+  }
+}
+@keyframes hvr-buzz {
+  50% {
+    -webkit-transform: translateX(3px) rotate(2deg);
+    transform: translateX(3px) rotate(2deg);
+  }
+  100% {
+    -webkit-transform: translateX(-3px) rotate(-2deg);
+    transform: translateX(-3px) rotate(-2deg);
+  }
+}
+.hvr-buzz {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px transparent;
+}
+
+#download:hover .hvr-buzz {
+  -webkit-animation-name: hvr-buzz;
+  animation-name: hvr-buzz;
+  -webkit-animation-duration: 0.15s;
+  animation-duration: 0.15s;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+}
+
+#btn-download:hover {
+  background-color: #cc0000;
 }
 
 .content img:hover {
@@ -280,14 +360,16 @@ section {
   background-size: cover;
   height: 100vh;
   min-height: 750px;
+  position: relative;
 }
 
 .wellcome-info {
-  max-height: 750px;
   text-align: center;
-  vertical-align: middle;
-  padding: 1rem;
-  margin-top: 10%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin-top: 50px;
 }
 
 .features {
@@ -434,6 +516,7 @@ section {
 }
 
 .carousel-indicators {
+  width: 50%;
   left: 75%;
 }
 .carousel-indicators li {
