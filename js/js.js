@@ -47,5 +47,7 @@ $(document).ready(function () {
 
     });
 });
-
+$(function() {
+    $('#thumbnails a').lightBox();
+});
 
