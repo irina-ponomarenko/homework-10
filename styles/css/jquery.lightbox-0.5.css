@@ -16,7 +16,7 @@
 	top: 0;
 	left: 0;
 	z-index: 90;
-	width: 100%;
+	width: 30%;
 	height: 500px;
 }
 #jquery-lightbox {
@@ -32,8 +32,8 @@
 #lightbox-container-image-box {
 	position: relative;
 	background-color: #fff;
-	width: 250px;
-	height: 250px;
+	width: 100%;
+	height: auto;
 	margin: 0 auto;
 }
 #lightbox-container-image { padding: 10px; }
@@ -84,7 +84,7 @@
 	color: #666; 
 }
 #lightbox-container-image-data #lightbox-image-details { 
-	width: 70%; 
+	width: 70%;
 	float: left; 
 	text-align: left; 
 }	
@@ -98,4 +98,7 @@
 	width: 66px; 
 	float: right;
 	padding-bottom: 0.7em;	
+}
+#lightbox-image{
+	width: 100%;
 }

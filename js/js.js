@@ -28,8 +28,7 @@ function onScroll(){
 $(document).ready(function () {
 
     $(document).on("scroll", onScroll);
-
-    $("a[href^=#]").click(function(e){
+    $("a[href^='#']").click(function(e){
         e.preventDefault();
 
         $(document).off("scroll");
@@ -47,7 +46,40 @@ $(document).ready(function () {
 
     });
 });
-$(function() {
-    $('#thumbnails a').lightBox();
-});
+
+    $(document).ready(function(){
+        $('#thumbnails a').lightBox();
+        $('.hover-galery').on('click', function() {
+            $(this).parent().find('img').trigger('click');
+        });
+    });
+
+
+
+
+
+
+$(document).ready(function () {
+    $('.open-modal').click( function(event){
+        event.preventDefault();
+        $('#overlay').fadeIn(400, // анимируем показ обложки
+            function(){ // далее показываем мод. окно
+                $('.b-popup')
+                    .css('display', 'block')
+                    .animate({opacity: 1, top: '50%'}, 200);
+            });
+    });
+
+// закрытие модального окна
+    $('#modal, #overlay').click( function(){
+        $('.b-popup')
+            .animate({opacity: 0, top: '45%'}, 200,  // уменьшаем прозрачность
+                function(){ // пoсле aнимaции
+                    $(this).css('display', 'none'); // скрываем окно
+                    $('#overlay').fadeOut(400); // скрывaем пoдлoжку
+                }
+            );
+    });
+})
+
 
