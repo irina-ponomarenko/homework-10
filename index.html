@@ -23,8 +23,8 @@
                 <img src="images/logo.png" alt="logo"/>
             </div>
             <nav class="navbar navbar-expand-lg navbar-light bg-light">
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
+                <button id="btn-click" type="button">
+                    <a href="#"><span class="icon"><i class="fa fa-bars fa-2x" aria-hidden="true"></i></span></a>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                     <div class="navbar-nav">
@@ -37,6 +37,18 @@
                 </div>
             </nav>
             </div>
+            <div class="modal_bg"></div>
+            <div class="modal_window">
+                <button><i class="fa fa-times fa-2x" aria-hidden="true"></i></button>
+                <ul class="navigation-min">
+                    <li><a href="#features">Features</a></li>
+                    <li><a href="#works">Works</a></li>
+                    <li><a href="#team">Our Team</a></li>
+                    <li><a href="#clients">Testimonials</a></li>
+                    <li><a href="#download">Download</a></li>
+                </ul>
+            </div>
+
         </header>
     <div class="container">
         <div class="wellcome-info">
@@ -295,7 +307,7 @@
     </div>
 </section>
 <section class="clients" id="clients">
-    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+    <div id="carouselExampleIndicators" class="carousel fade" data-ride="carousel">
         <ol class="carousel-indicators">
             <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
             <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
@@ -391,6 +403,7 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
 <script src="js/jquery-3.2.1.js"></script>
+<script src="js/modal.js"></script>
 <script src="js/js.js"></script>
 <script src="js/jquery.lightbox-0.5.min.js"></script>
 </body>

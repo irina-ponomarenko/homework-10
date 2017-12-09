@@ -1,20 +1,52 @@
-.b-popup{
-  display: none;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0,0,0,0.8);
-  overflow: hidden;
-  position: fixed;
-  top: 0px;
-  left: 0px;
+.modal_bg{
+  position:absolute;
+  display:none;
+  z-index:1000;
+  left:0;
+  top:0;
+  background-color:#000;
 }
-.b-popup .b-popup-content {
-  margin: 0 auto;
+
+.modal_window{
+  position:absolute;
+  display:none;
+  left:50%;
+  z-index:1100;
+  width:600px;
+  margin-left:-300px;
+  height:300px;
+  background:transparent;
+  button{
+    background: transparent;
+    margin-left: 25%;
+    margin-top: 10%;
+    outline: none;
+    &:hover{
+      border: 1px solid $color-white;
+      background-color: rgba(242, 242, 242, 0.3);
+    }
+  }
+}
+.navigation-min {
   text-align: center;
-  font-size: 40px;
-  color: white;
-  line-height: 50px;
-  a{
-    color: $color-grey;
+  li {
+    margin-top: 30px;
+    &:first-child{
+      margin-top: 0;
+    }
+    a {
+      color: $color-grey;
+      font-family: $family-all;
+      font-size: 35px;
+      margin-top: 20px;
+      padding: 0;
+      &:hover{
+        color: $color-white;
+        text-decoration: none;
+      }
+      &:first-child {
+        margin-top: 0;
+      }
+    }
   }
 }

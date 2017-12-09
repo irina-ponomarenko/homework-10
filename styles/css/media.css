@@ -5,18 +5,21 @@
 }
 @media screen and (min-width:768px) and (max-width:991px) {
     .navbar-nav{
-        flex-direction: row !important;
+        display: none!important;
     }
-    .navbar-light .navbar-toggler{
-        display: none !important;
+    #btn-click{
+        display: block;
     }
     #jquery-lightbox{
-        margin-top: 30%!important;
+        margin-top: 20%!important;
     }
 }
 @media screen and (min-width:300px) and (max-width:884px) {
     .row{
         justify-content: center;
+    }
+    #btn-click{
+        display: block;
     }
 }
 @media screen and (min-width:300px) and (max-width:732px) {
@@ -54,6 +57,9 @@
     }
 }
 @media screen and (min-width:300px) and (max-width:575px) {
+    .container-header{
+        padding: .5rem 0 .5rem 0;
+    }
     .footer-col h3{
         margin-top: 20px;
     }
@@ -115,6 +121,7 @@
     }
 }
 @media screen and (min-width:300px) and (max-width:375px) {
+
     #lightbox-image{
         width: 100% !important;
     }
@@ -139,6 +146,12 @@
         margin-top: 20px;
     }
     .citate-autore blockquote p{
+        font-size: 20px;
+    }
+    .footer-bottom p{
+        font-size: 11px;
+    }
+    .card-body h3{
         font-size: 20px;
     }
 

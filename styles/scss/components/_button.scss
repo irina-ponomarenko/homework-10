@@ -4,6 +4,9 @@ button{
   text-transform: uppercase;
   font-size: $size-small;
 }
+.navbar-toggler{
+  background-color: $color-white;
+}
 #button-red{
     background-color: $color-red-orange;
     padding: 20px 56px;
@@ -11,6 +14,9 @@ button{
   -webkit-box-shadow: -2px -2px 9px 0px rgba(0,0,0,0.43);
   -moz-box-shadow: -2px -2px 9px 0px rgba(0,0,0,0.43);
   box-shadow: -2px -2px 9px 0px rgba(0,0,0,0.43);
+  &:hover{
+    background-color: $color-darck-red;
+  }
 }
 #btn-download{
   background-color: $color-red-orange;
@@ -20,6 +26,23 @@ button{
   -webkit-box-shadow: -2px -2px 9px 0px rgba(0,0,0,0.43);
   -moz-box-shadow: -2px -2px 9px 0px rgba(0,0,0,0.43);
   box-shadow: -2px -2px 9px 0px rgba(0,0,0,0.43);
+}
+#btn-click{
+  display: none;
+  -webkit-appearance: button;
+  background-color: white;
+  padding: .25rem .75rem;
+  font-size: 1.25rem;
+  line-height: 1;
+  background: 0 0;
+  border: 1px solid transparent;
+  border-radius: .25rem;
+  a{
+    color: $color-grey;
+    &:hover{
+      color: $color-white;
+    }
+  }
 }
 @-webkit-keyframes hvr-buzz {
   50% {
