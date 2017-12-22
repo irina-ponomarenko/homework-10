@@ -1,0 +1,37 @@
+.bg-light{
+  background-color: transparent !important;
+}
+.navbar{
+  margin-bottom: 0;
+}
+.navbar-light {
+  .navbar-nav {
+    flex-direction: row;
+    .nav-a {
+      color: $color-grey;
+      font-family: $family-all;
+      font-size: $size-small;
+      margin-right: 70px;
+      padding: 0;
+      &:last-child{
+        margin-right: 0;
+      }
+    }
+  }
+}
+.collapse{
+  display: flex;
+}
+.navbar-nav{
+  a{
+    &:hover{
+      color: $color-white !important;
+      text-decoration: none;
+    }
+  }
+}
+.navbar-nav{
+  .active{
+    color: $color-white !important;
+  }
+}

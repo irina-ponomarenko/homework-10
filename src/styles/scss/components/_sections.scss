@@ -1,0 +1,187 @@
+section{
+  width: 100%;
+  margin: 0 auto;
+}
+.container{
+  max-width: 1170px;
+  width: 100%;
+}
+.wellcome{
+  background-image: url("../../images/welcome.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  min-height: 750px;
+  position: relative;
+}
+.wellcome-info{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  position: absolute;
+  top: -50%;
+  transform: translateY(50%);
+  align-items: center;
+
+}
+.features{
+  padding: 40px 0 120px 0;
+.col-sm{
+  font-family: $family-all;
+  vertical-align: middle;
+  text-align: center;
+  h4 {
+    color: $color-black;
+    font-weight: bold;
+  }
+  p{
+    text-align: center;
+   padding: 0 40px 0 40px;
+    color: $color-black;
+  }
+}
+}
+.pen{
+  position: relative;
+  padding-top: 62px;
+  &:before{
+    content: '';
+    background-image: url("../../images/features-1.png");
+    width: 60px;
+    height: 60px;
+    display: block;
+    position: absolute;
+    top: 0;
+    bottom: 62px;
+    left: 0;
+    right:0;
+    margin: 0 auto;
+  }
+}
+.monitor{
+  position: relative;
+  padding-top: 62px;
+  &:before{
+    content: '';
+    background-image: url("../../images/features-2.png");
+    width: 73px;
+    height: 60px;
+    display: block;
+    position: absolute;
+    top: 0;
+    bottom: 62px;
+    left: 0;
+    right:0;
+    margin: 0 auto;
+  }
+}
+.lamp{
+  position: relative;
+  padding-top: 62px;
+  &:before{
+    content: '';
+    background-image: url("../../images/features-3.png");
+    width: 41px;
+    height: 60px;
+    display: block;
+    position: absolute;
+    top: 0;
+    bottom: 62px;
+    left: 0;
+    right:0;
+    margin: 0 auto;
+  }
+}
+.clean{
+  position: relative;
+  padding-top: 62px;
+  &:before{
+    content: '';
+    background-image: url("../../images/features-4.png");
+    width: 56px;
+    height: 60px;
+    display: block;
+    position: absolute;
+    top: 0;
+    bottom: 62px;
+    left: 0;
+    right:0;
+    margin: 0 auto;
+  }
+}
+.ready{
+  position: relative;
+  padding-top: 62px;
+  &:before{
+    content: '';
+    background-image: url("../../images/features-5.png");
+    width: 72px;
+    height: 60px;
+    display: block;
+    position: absolute;
+    top: 0;
+    bottom: 62px;
+    left: 0;
+    right:0;
+    margin: 0 auto;
+  }
+}
+.download{
+  position: relative;
+  padding-top: 62px;
+  &:before{
+    content: '';
+    background-image: url("../../images/features-6.png");
+    width: 79px;
+    height: 60px;
+    display: block;
+    position: absolute;
+    top: 0;
+    bottom: 62px;
+    left: 0;
+    right:0;
+    margin: 0 auto;
+  }
+}
+.ligtbox{
+  overflow: hidden;
+}
+.team{
+  padding-bottom: 105px;
+}
+.clients{
+  background-color: $color-bordo;
+  height: auto;
+  .wrapper-info-carosel{
+    display: flex;
+    justify-content: center;
+  }
+}
+.wrapper-img{
+  width: 50%;
+  overflow: hidden;
+  img{
+    position: relative;
+    display: inline-block;
+    top: 50%;
+    left: 50%;
+    vertical-align: middle;
+    transform: translate(-50%, -50%);
+  }
+}
+.card-body{
+  color:$color-black;
+  h3{
+    font-size: $size-h3;
+  }
+  p{
+    margin-bottom: 40px;
+  }
+}
+.dw-load{
+  padding: 100px 0 100px 0;
+}
+.card{
+  border: none;
+}
+
